@@ -17,11 +17,28 @@
             transform: rotate(-60deg);
             transform-origin: 100% 0%;
         }
+        .Ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-left: 100px;
+            background-color: red;
+            position: relative;
+            left: 650px;
+            transition: transform 2s ease-in-out .5s;
+        }
+        .Ball:hover{
+            transform: translate(1000px, -250px);
+        }
+        .Field:hover .Ball{
+            transform: translate(1000px, -250px);
+        }
     </style>
 </head>
 <body>
     <div class="Field">
         <img class="Bat" src="Media/bat.png" alt="">
+        <div class="Ball"></div>
     </div>
 </body>
 </html>
